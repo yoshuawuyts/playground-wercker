@@ -1,7 +1,5 @@
 source dir : src
 box: wercker/ubuntu12.04-nodejs0.10@1.3.0
-services:
-  - wfreeman/neo4j@0.0.9
 
 build:
   steps:
