@@ -12,4 +12,4 @@ build:
     - script:
         name: run app
         code: |
-          node ./index.js $$HOST$$:7474
+          node ./index.js $WERCKER_NEO4J_URL
