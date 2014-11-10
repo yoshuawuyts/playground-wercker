@@ -4,28 +4,7 @@
 [![Test coverage][coveralls-image]][coveralls-url]
 [![Downloads][downloads-image]][downloads-url]
 
-
-## Installation
-```bash
-npm install wercker-neo4j
-```
-
-## Usage
-```js
-
-```
-
-## API
-```js
-
-```
-
-## Why?
-
-
-## See also
--
--
+Test repo for `noe4j` on `wercker`. Polls a service and logs the output.
 
 ## License
 [MIT](https://tldrlegal.com/license/mit-license)
