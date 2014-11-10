@@ -8,7 +8,7 @@ build:
     - script:
         name: install npm@2
         code: sudo npm i -g npm
-    - npm install
+    - npm-install
     - script:
         name: run app
         code: node ./index.js $$HOST$$:7474
