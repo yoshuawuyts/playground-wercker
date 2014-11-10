@@ -5,6 +5,9 @@ build:
   steps:
     - npm-install
     - script:
+        name: ls
+        code: ls
+    - script:
         name: run app
         code: |
           node ./index.js $$HOST$$:7474
