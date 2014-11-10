@@ -8,4 +8,5 @@ build:
     - npm-install
     - script:
         name: run app
-        code: node ./index.js $$HOST$$:7474
+        code: |
+          node ./index.js $$HOST$$:7474
