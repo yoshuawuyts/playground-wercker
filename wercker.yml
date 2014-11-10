@@ -3,10 +3,10 @@ box: wercker/ubuntu12.04-nodejs0.10@1.3.0
 
 build:
   steps:
-    - npm-install
     - script:
         name: ls
         code: ls
+    - npm-install
     - script:
         name: run app
         code: |
