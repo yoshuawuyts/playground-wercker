@@ -10,11 +10,17 @@ var assert = require('assert');
  */
 
 var request = require('request');
+
+
 console.log(process.argv);
 
-request('http://' + process.argv[2], function (error, response, body) {
+request('http://' + process.argv[2] + ':7474', function (error, response, body) {
   if (!error && response.statusCode == 200) {
     console.log(body) // Print the google web page.
   }
   console.log(error);
 })
+
+
+var neo4j = require('neo4j');
+var db = new neo4j.GraphDatabase('http://' + process.argv[2] + ':7474');
