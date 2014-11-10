@@ -5,9 +5,6 @@ services:
 
 build:
   steps:
-    - script:
-        name: install npm@2
-        code: sudo npm i -g npm
     - npm-install
     - script:
         name: run app
