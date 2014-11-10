@@ -1,0 +1,27 @@
+{
+  "name": "wercker-neo4j",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": "yoshuawuyts/wercker-neo4j",
+  "keywords": [],
+  "license": "MIT",
+  "dependencies": {
+    "request": "^2.47.0"
+  },
+  "devDependencies": {
+    "istanbul": "^0.3.2",
+    "make-lint": "^1.0.1",
+    "mocha": "^2.0.1",
+    "should": "^4.2.1"
+  },
+  "files": [
+    "lib",
+    "LICENSE",
+    "index.js",
+    "HISTORY.md"
+  ]
+}

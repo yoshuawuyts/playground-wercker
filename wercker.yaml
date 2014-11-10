@@ -1,0 +1,14 @@
+source dir : src
+box: wercker/ubuntu12.04-nodejs0.10@1.3.0
+services:
+  - wfreeman/box-neo4j
+
+build:
+  steps:
+    - script:
+        name: install npm@2
+        code: sudo npm i -g npm
+    - npm install
+    - script:
+        name: run app
+        code: node ./index.js $$HOST$$:7474
