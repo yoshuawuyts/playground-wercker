@@ -9,3 +9,5 @@ build:
         code: |
           chmod +x ./test.js
           ls -la
+          chmod -x ./test.js
+          ls -la
