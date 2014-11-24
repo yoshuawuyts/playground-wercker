@@ -1,0 +1,15 @@
+box: wercker/ubuntu12.04-nodejs0.10@1.3.0
+services:
+  - wfreeman/neo4j@0.0.9
+
+
+build:
+  steps:
+    - script:
+        name: ls
+        code: ls
+    - npm-install
+    - script:
+        name: run app
+        code: |
+          node ./index.js $WERCKER_NEO4J_URL
